@@ -1,0 +1,17 @@
+input {
+    width: 200px;
+}
+
+button {
+    margin-block: 20px;
+    background-color: #41B883;
+    border: 2px solid #333B59;
+}
+
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
