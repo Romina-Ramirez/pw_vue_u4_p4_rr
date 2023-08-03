@@ -1,17 +1,50 @@
 input {
     width: 200px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 button {
-    margin-block: 20px;
+    margin: 20px;
     background-color: #41B883;
     border: 2px solid #333B59;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: black;
+    font-size: large;
 }
 
+button:hover {
+    background-color: #2a815a;
+    border: 2px solid #1b202f;
+    color: white;
+}
 
-div {
+.contCapacidad {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2ffe4;
+    width: 50%;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+p {
+    font-size: 24px;
+    text-align: justify;
+    margin-inline: 250px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.centrar {
+    display: flex;
     justify-content: center;
     align-items: center;
 }

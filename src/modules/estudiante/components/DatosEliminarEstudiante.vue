@@ -1,6 +1,11 @@
 <template>
-  <input v-model="id" type="text" />
-  <button @click="eliminarEstudiante">Eliminar</button>
+  <div class="centrar">
+    <div class="contCapacidad">
+      <h2>Borre un estudiante por su id</h2>
+      <input v-model="id" type="text" />
+      <button @click="eliminarEstudiante">Eliminar</button>
+    </div>
+  </div>
 </template>
 
 <script>
