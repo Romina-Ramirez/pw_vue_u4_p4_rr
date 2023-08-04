@@ -42,6 +42,7 @@ export default {
         provincia: this.provincia,
       };
       actualizarEstudianteFachada(data, this.id);
+      console.log('Estudiante actualizado.')
     },
   },
 };

@@ -39,6 +39,7 @@ export default {
         provincia: this.provincia,
       };
       ingresarEstudianteFachada(data);
+      console.log('Estudiante insertado.')
     },
   },
 };

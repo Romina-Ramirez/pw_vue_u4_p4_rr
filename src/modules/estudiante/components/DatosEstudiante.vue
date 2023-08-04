@@ -21,7 +21,7 @@ import { obtenerEstudianteFachada } from "../helpers/EstudianteCliente.js";
 export default {
   data() {
     return {
-      cedula: null,
+      cedula: this.$route.params.cedula,
       nombre: null,
       apellido: null,
       fecha: null,
@@ -29,13 +29,23 @@ export default {
     };
   },
   methods: {
-    async consultarEstudiante() {
-      const data = await obtenerEstudianteFachada(this.cedula);
+    async consultarEstudiante(cedula) {
+      const data = await obtenerEstudianteFachada(cedula);
       this.nombre = data.nombre;
       this.apellido = data.apellido;
-      this.fecha = data.fecha;
+      this.fecha = data.fechaNacimiento;
       this.provincia = data.provincia;
     },
+  },
+  mounted() {
+    console.log(this.$route)
+    const { cedula } = this.$route.params;
+    console.log(cedula);
+    this.consultarEstudiante(cedula);
+    console.log(this.$route)
+    const prov = this.$route.query.provincia;
+    const {provincia} = this.$route.query;
+    // http://localhost:8081/......./1723617216?ciudad=quito&edad=18
   },
 };
 </script>

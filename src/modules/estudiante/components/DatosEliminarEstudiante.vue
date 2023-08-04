@@ -19,6 +19,7 @@ export default {
   methods: {
     eliminarEstudiante() {
       eliminarEstudianteFachada(this.id);
+      console.log('Estudiante eliminado.')
     },
   },
 };
