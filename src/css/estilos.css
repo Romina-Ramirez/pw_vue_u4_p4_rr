@@ -6,7 +6,7 @@ input {
     font-size: 20px;
 }
 
-button {
+/* button {
     margin: 20px;
     background-color: #41B883;
     border: 2px solid #333B59;
@@ -14,7 +14,7 @@ button {
     padding: 10px 30px;
     color: black;
     font-size: large;
-}
+} */
 
 button:hover {
     background-color: #2a815a;

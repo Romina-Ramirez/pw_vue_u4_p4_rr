@@ -3,7 +3,7 @@
     <div class="contCapacidad">
       <h2>Consulte un estudiante por su cédula</h2>
       <input v-model="cedula" type="text" placeholder="Ingrese la cédula..." />
-      <button @click="consultarEstudiante">Consultar</button>
+      <button class="btn btn-success" @click="consultarEstudiante">Consultar</button>
       <label for="">Nombre</label>
       <input v-model="nombre" type="text" />
       <label for="">Apellido</label>
